@@ -3,7 +3,7 @@ NodeJS, ORM, Sequelize, MVC, MariaDB, Git, Bitbucket, ER Diagram,
 Angular JS, Express, Bootstrap, RESTful API, JSON, Responsive Web
 ==========================================================================
 
-# Node.JS (서버사이드 언어 : 스크리트 언어 중에서 서버사이드에서 실행되는 스크립트 언어)
+# ● Node.JS (서버사이드 언어 : 스크리트 언어 중에서 서버사이드에서 실행되는 스크립트 언어)
 
 - node.js는 구글이 개발하여 현재 크롬브라우저에 탑재되어 있는 Javascript 엔진인 V8을 기반으로 만들어진 Serverside Javascript이다.
 - 서버용 웹 개발을 위한 오픈소스 환경
@@ -60,7 +60,7 @@ Event call back 을 이용한 Node는 기존의 WAS와는 다르게 시간이 �
 그러다 보니 기존이 Thread 기반의 WAS에 비해 동시 Request를 더 많이  받을 수 있다는 장점이 있다.
 
 
-# Express
+# ● Express
 
 - Express는 자바스크립트 기반으로 node.js 실행환경에서 호스트된 웹 프레임 워크이다.
 - NodeJS를 위한 빠르고 개방적이고 간결한 웹 프레임워크
@@ -81,7 +81,7 @@ Controller = 라우터
 ** Package.json의 dependencies 에 "express" : "*" 추가해줌. pom.xml과 비슷
 
 
-# ORM
+# ● ORM
 - 설계된 데이터베이스와 객체와의  관계에 대한 설정등을 포함하여 보다 객체지향적인 시스템의 완성을 위한 도구
 - OOP 언어와 RDBMS의 시스템을 매핑하여 쉽게 데이터관련 OOP 프로그래밍을 하도록 하기 위한 기술
 - 객체지향 애플리케이션은 객체지향대로 다루고, 관계형 데이터베이스는 관계형 데이터베이스대로
@@ -122,7 +122,7 @@ Controller = 라우터
 
 
 
-# Maria DB
+# ● Maria DB
 - 오픈소스의 관계형 데이터베이스 관리시스템(RDBMS)
 - Mysql 코어를 가지고 분리개발 한 것
 - Mysql의 모든 명령어, 인터페이스, 라이브러리와 같은 API가 MariaDB에도 존재하며 MariaDB는 사실상 MySQL의 완벽한 대체제
@@ -146,7 +146,7 @@ Controller = 라우터
 - 2배 가량 퍼포먼스가 개선되었다.
 
 
-# MVC
+# ● MVC
 - 디자인 패턴 중 하나로써 하나의 프로젝트를 Model - View - Controller 세 가지의 역할로 구분한 패턴
 
 Model : 객체 데이터, DB쿼리를 통한 데이터
@@ -169,7 +169,7 @@ Controller : View 와 Model을 연결, 비즈니스 로직을 담당
 ### Node.JS / MVC프레임워크 - Express.js(모듈)
 
 
-# AngularJS 
+# ● AngularJS 
 - 구글에서 만든 자바스크립트 프레임워크
 - HTML을 확장시켜 동적인 Application을 지원하며 데이터가 변경함에 있어 자동적으로 AngularJS에서 UI요소를 만들고
   데이터 필터링 / 소팅 등 많은 기능을 제공
@@ -219,7 +219,7 @@ Module(모듈) - 모든 자바스크립트 기능들이 ng-app="모듈명"을 �
 Service(서비스) - 특정 기능을 담당하는 객체
 		- 싱글톤 객체로 인스턴스가 하나만 존재한다.
 
-# Git
+# ● Git
 
 ## Git의 사용목적 : 
 - 여러명이 공유한 파일을 동시에 편집하여, 충돌이 나지 않도록 하기 위해서
@@ -335,7 +335,7 @@ master는 rebase하여, 분기된 브랜치로 병합하면 된다.
 
 
 
-# Bitbucket 
+# ● Bitbucket 
 - 분산버전 관리 툴인 Git을 사용하는 프로젝트를 지원하는 웹호스팅 서비스
 - Github와 달리 private(비공개) 저장소도 무료로 사용할 수 있다.
 
@@ -349,7 +349,7 @@ master는 rebase하여, 분기된 브랜치로 병합하면 된다.
 
 
 
-# ER Diagram
+# ● ER Diagram
 - 데이터 모델링 분야 (개체 - 관계 모델) : 구조화된 데이터에 대한 일련의 표현
 					  개체 타입과 이들간의 관계타입을 이용해 현실 세계를 개념적으로 표현한것.
 ## 구성요소
@@ -392,7 +392,7 @@ master는 rebase하여, 분기된 브랜치로 병합하면 된다.
 
 
 
-# Bootstrap 
+# ● Bootstrap 
 - 트위터에서 시작된 HTML5 기반의 오픈소스 웹 디자인 프레임워크로 각종 레이아웃, 버튼, 입력창 등의
   디자인을 css와 Javascript 로 만들어 놓은 것 ㅡ> 손쉬운 웹페이지 제작가능
 - 동적인 웹 사이트 및 응용 웹 개발을 위한 프론트엔드 프레임워크
@@ -413,7 +413,8 @@ master는 rebase하여, 분기된 브랜치로 병합하면 된다.
 - IE8의 지원을 위해 많은 부분을 JavaScript에 의존하는 경향이 크기 때문에 무겁다.
 
 
-# Responsive Web
+
+# ● Responsive Web
 - 디자인과 개발이 화면 사이즈, 플랫폼 등을 기본으로 하여 사용자의 환경과 행동에 맞춰 반응하는 것
 	
 ## 필요성
@@ -426,7 +427,10 @@ master는 rebase하여, 분기된 브랜치로 병합하면 된다.
   컨텐츠를 살펴보고 구매나 예약 등의 서비스로 이어질 수 있음.
 	ㅡ> 사용자의 만족도 / 영업 및 마케팅 촉진 
 	
-# RESTful API 
+
+
+
+# ● RESTful API 
 - 웹 설계의 우수성을 살려 웹의 장점을 최대한 활용할 수 있는 아키텍처
 
 ## REST의 기본요소 : 리소스, 메소드, 메세지
@@ -571,7 +575,9 @@ REST서버는 API를 제공하고, 제공된 API를 이용해서 비즈니스 �
 - RDBMS와 어색함(NoSQL과 잘맞음)
 - HTTP한계에 묶인다.
 
-# JSON(JavaScript Object Notation) 
+
+
+# ● JSON(JavaScript Object Notation) 
 
 - 속성 - 값 쌍으로 이루어진 데이터 오브젝트 교환 포맷의 일종이다
 - XML에 비해 경량화된 데이터 교환포맷으로 기존의 XML을 가볍게 만든것이다.
