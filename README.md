@@ -96,7 +96,7 @@ AngularJS
 				      		input을 해당 모델의 구성물에 바인딩하는 ng-model
 				      		이들 모두 directive를 이용한 확장 문법이다.
 
-Git
+Git (ahahah)
 	- Repository(저장소) ㅡ> 파일이나 폴더를 저장해 두는 곳
 							Git저장소의 장점은 파일이 변경이력별로 구분되어 저장된다.
 	- 커밋 ㅡ> 파일 및 폴더의 추가 및 변경 사항을 저장소에 기록하기 위함
