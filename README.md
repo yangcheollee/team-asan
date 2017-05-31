@@ -35,4 +35,44 @@
 
 ## Model - View - Controller 역할을 나누어 개발하는 디자인 패턴.
 ### Model : 객체 데이터, DB쿼리를 통한 데이터
+### View : 사용자에게 보여지는 화면 
+### Controller : View 와 Model을 연결.
+
+#EXPRESS ? 
+
+##Node.js 의 MVC 모듈이 Express 
+
+### View = ejs 파일
+### Controller = 라우터
+
+### Package.json의 dependencies 에 "express" : "*" 추가해줌. pom.xml과 비슷 
+
+
+#REST API
+
+## 무엇을(HTTP URI 리소스) 어떻게 한다(HTTP method + payload)
+## HTTP 메소드와 CRUD 비교 
+### POST = create
+### GET = read
+### PUT = update/replace
+### PATCH = update/modify
+### DELETE = delete
+
+## 예시) GET www.plus.co.kr/images/main HTTP/1.1 Accept:image/jpg
+## HTTP메소드와 URI로 원하는 내용을 모두 표현하는것.
+## RESTFUL 한것 = 리소스/HTTP메소드/확장자x/동사 x 명사만 사용한것.
+
+## 특징 
+### 1.Uniform 
+### 2.stateless
+### 3.HTTP cacheable
+### 4.self-decriptiveness
+### 5.Client - Server 역할 명확히 분리
+### 6.확장성 및 보안 향상
+### 7.Code on demand - 서버에서 스크립트를 통해 클라이언트부분 수행가능
+
+### 이것이 모두 만족 할 시 RestFul 하다고 함. 
+
+## 단점
+### 표준이없음, RDBMS와 어색함(NoSQL과 잘맞음) , HTTP 한계에 묶임.
 
