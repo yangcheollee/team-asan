@@ -1,8 +1,124 @@
 # team-asan
-ì•„ì‚°ë©¤ë²„ë“¤ì˜ ì•„ì´ë””ì–´ ì •ë¦¬ ê³µê°„
+?„ì‚°ë©¤ë²„?¤ì˜ ?„ì´?”ì–´ ?•ë¦¬ ê³µê°„
 
 
-## ë§ˆí¬ë‹¤ìš´Â ì‚¬ìš©ë²•
+## ë§ˆí¬?¤ìš´Â ?¬ìš©ë²?
 
 https://gist.github.com/ihoneymon/652be052a0727ad59601
 
+========================== ypLim ====================================
+Node JS
+	- ´ëÇ¥ ORM : Sequelize
+Express
+	- nodeJS¸¦ À§ÇÑ ºü¸£°í °³¹æÀûÀÌ°í °£°áÇÑ À¥ ÇÁ·¹ÀÓ¿öÅ©
+	- ÀÏ¹ÝÀûÀÎ Web Application ±â´ÉÀ» Æ÷ÇÔÇÏ´Â, 
+	  WebAppÀ» °³¹ßÇÏ´Âµ¥ ÇÊ¿äÇÑ ¼ö¸¹Àº ¸ðµâÀ» ÁýÇÕÇÏ¿© »ç¿ëÀÚ°¡ ¾²±â ½±µµ·Ï ¸¸µé¾î µÐ ¸ðµâ
+	- Á¤±Ô½ÄÀ» Áö¿øÇÏ´Â °­·ÂÇÑ ¶ó¿ìÆÃ ¸ÞÄ¿´ÏÁò, ½ÉÇÃÇÑ ¶ó¿ìÆ® ÇÊÅÍ¸µ
+	- ¹Ìµé¿þ¾î ¾ÆÅ°ÅØÃ³¸¦ È°¿ëÇÏ¸ç ´Ù¾çÇÑ µ¥ÀÌÅÍ Ãâ·ÂÁö¿ø
+	- ´ÙÁßÀ¸·Î ÅÛÇÃ¸´ ¿£ÁøÀ» Çã¿ëÇÏ´Â °£´ÜÇÑ º¯¼öÀü´Þ ºä ½Ã½ºÅÛ
+	** ÇÙ½É ¤Ñ> ¶ó¿ìÅÍ ÀÚÃ¼¿¡ ¹Ìµé¿þ¾î³ª Á¶°ÇµéÀ» ³¢¿ö³Ö°í ¼ø¼­´ë·Î ¼øÈ¯ÇØ°¡¸ç 			Ã³¸®ÇØ°¡´Â °Í
+
+ORM(Object Relational Mapping)
+	- OOP¾ð¾î¿Í µ¥ÀÌÅÍ¸¦ ´Ù·ç´Â RDBMS¿ÍÀÇ »óÀÌÇÑ ½Ã½ºÅÛÀ» ¸ÅÇÎÇÏ¿©, ½±°Ô 
+	   µ¥ÀÌÅÍ°ü·Ã OOPÇÁ·Î±×·¡¹ÖÀ» ÇÏµµ·Ï ÇÏ±â À§ÇÑ ±â¼úÀÌ´Ù.
+	- °´Ã¼ÁöÇâ ¾ÖÇÃ¸®ÄÉÀÌ¼ÇÀº °´Ã¼ ÁöÇâ´ë·Î ´Ù·ç°í, °ü°èÇü µ¥ÀÌÅÍº£ÀÌ½º´Â 
+	   °ü°èÇü µ¥ÀÌÅÍº£ÀÌ½º´ë·Î ¼³°èÇÏ°í »ç¿ëÇÒ ¼ö ÀÖµµ·Ï Áß°£¿¡¼­ µµ¿ÍÁÖ´Â ±â¼ú
+
+	- Ex) 		OOP				RDBMS
+		        Å¬·¡½º		<¤Ñ>		Å×ÀÌºí
+		     Object-graph      <¤Ñ>		Relation
+	   ·Î Ç¥ÇöÀÌ °¡´ÉÇÑµ¥ Ç¥Çö¹æ½Ä¿¡¼­ »ó´çÇÑ Â÷ÀÌÁ¡ÀÌ ÀÖ¾î ¸ÅÇÎÀ» ÅëÇØ º¯È¯À» 		   ÇØÁÖ¾î¾ß ÇÑ´Ù.
+	ÀåÁ¡ ¤Ñ> 
+		¡Ü °³¹ßÀÚ°¡ OOP³ª CBD¿¡ ÀÇÇÑ °³¹ß¿¡¸¸ ÁýÁß°¡´É
+		¡Ü RDBMS°ü·Ã ºÎºÐÀÇ °í·Á»çÇ× ÃÖ¼ÒÈ­
+	 	¡Ü OOP¾ð¾î/CBD°³¹ß ¹æ¹ý·Ð¿¡¼­ Å¬·¡½º³ª ÄÄÆ÷³ÍÆ® ¼³°è ¹× °³¹ß¿¡¼­ 
+		    ÀÌÁúÀûÀÎ RDBMS °ü·ÃµÈ ºÎºÐÀ» ÃÖ¼ÒÈ­ÇÏ°í, ¿ø Á¦Ç°ÀÇ ·ÎÁ÷ ±¸Çö¿¡ 
+ 		    Ãæ½ÇÇÏ°íÀÚ ÇÏ´Â ÀÇµµ¿¡¼­ ³ª¿Â »ê¹°
+		¡Ü »ý»ê¼ºÀÌ ³ô¾ÆÁö°í Ä³½Ã µî ´Ù¾çÇÑ ÀúÀå¼Ò¸¦ È°¿ëÇÏ±â¿¡ À¯¿¬ÇÑ ±¸Á¶			    ¸¦ ¸¸µé¾î ÁØ´Ù.
+		¡Ü Å¾´Ù¿î(Top-down)¹æ½ÄÀÇ ¼³°è¸¦ Ã¤ÅÃÇÒ ¼ö ÀÖ´Â °æ¿ì ÀåÁ¡ÀÌ ±Ø´ëÈ­ 		    µÈ´Ù.
+	´ÜÁ¡ ¤Ñ>
+		¡Ü Çö½ÇÀûÀ¸·Î ÀÚ¹Ù°èÃþ¿¡ ¸ÂÃç DB½ºÅ°¸¶¸¦ ¼³°èÇÒ ¼ö ¾ø´Â ÇÁ·ÎÁ§Æ®°¡ 			    »ó´çÈ÷ ¸¹À¸¸ç ÀÌ·± °æ¿ì ORMÀ» ¿°µÎ¿¡ µÎÁö ¾Ê°í ¼³°èµÈ ¸®°Å½Ã ½º			    Å°¸¶¸¦ ±×´ë·Î µÎ°í ¹ÙÅÒ¾÷(bottom-up)¹æ½ÄÀ¸·Î ±¸ÇöÇÏ´Â Á¢±ÙÀ» ÇÒ 			    ¼ö ¹Û¿¡ ¾ø±â¿¡ ORMÀÇ ÀåÁ¡ÀÌ »ó´çÈ÷ Åð»ö
+	 	¡Ü ORM±â¼ú ÀÚÃ¼µµ ÃÖÀûÈ­³ª º¹Àâµµ, ¶Ç´Â Ãß»óÈ­ µîÀÇ ÀÌÀ¯·Î ²ÙÁØÈ÷ 			    ºñÆÇ¹Þ¾Æ¿Ô´Ù. 
+	 	¡Ü ÇöÀç´Â ORMÀ» »ç¿ëÇÏÁö ¾Ê°íµµ ¿µ¼Ó¼º ¹®Á¦¸¦ ±ò²ûÇÏ°Ô Ã³¸®ÇÒ ¼ö 			    ÀÖ´Â ´ë¾Èµµ Á¸ÀçÇÑ´Ù.
+Maria DB
+	- mysql ÄÚ¾î¸¦ °¡Áö°í ºÐ¸®°³¹ß ÇÑ °ÍÀÌ mariaDB
+	   MysqlÀÇ ¸ðµç ¸í·É¾î, ÀÎÅÍÆäÀÌ½º, ¶óÀÌºê·¯¸®¿Í °°Àº API°¡ MariaDB¿¡µµ Á¸	  	   ÀçÇÏ¸ç MariaDB´Â »ç½Ç»ó MySQLÀÇ ¿Ïº®ÇÑ ´ëÃ¼Á¦¶ó°í ¸»ÇÒ ¼ö ÀÖ´Ù.
+	   ±â´É»óÀÇ Â÷ÀÌ´Â °ÅÀÇ ¾øÁö¸¸ MariaDBÀÇ ÆÛÆ÷¸Õ½º°¡ ´õ ÁÁ°í ¿£Áøµµ Ãß°¡µÇ		   ¾î MySQLº¸´Ù ¶Ù¾î³ª´Ù.
+	
+	ÀåÁ¡ ¤Ñ> °¡Àå Å« ÀåÁ¡Àº ¼Óµµ, 2¹è°¡·® ÆÛÆ÷¸Õ½º°¡ °³¼±µÇ¾ú´Ù.
+MVC (Model View Controller)
+	- µðÀÚÀÎ ÆÐÅÏ Áß ÇÏ³ª ¤Ñ> ÇÏ³ªÀÇ ¾ÖÇÃ¸®ÄÉÀÌ¼Ç(ÇÁ·ÎÁ§Æ®)¸¦ ¼¼ °¡ÁöÀÇ ¿ªÇÒ·Î 						±¸ºÐÇÑ ÆÐÅÏ
+	 Model ¤Ñ> ¾ÖÇÃ¸®ÄÉÀÌ¼ÇÀÇ Á¤º¸ Áï µ¥ÀÌÅÍ¸¦ ´ã´çÇÏ¸ç µ¥ÀÌÅÍÀÇ °¡°øÀ» Ã¥ÀÓÁö			       ´Â ÄÄÆ÷³ÍÆ®
+	 View ¤Ñ> µ¥ÀÌÅÍ ¹× °´Ã¼ÀÇ ÀÔ·Â, ±×¸®°í º¸¿©ÁÖ´Â Ãâ·ÂÀ» ´ã´çÇÏ´Â »ç¿ëÀÚ ÀÎ			    ÅÍÆäÀÌ½º ¿ä¼Ò,
+		    Å¬¶óÀÌ¾ðÆ® Ãø ±â¼úÀÎ HTML/CSS/JavaScript ¸¦ ¸ð¾ÆµÐ ÄÁÅ×ÀÌ³Ê
+	 Controller ¤Ñ> Model°ú ViewÀÇ ´Ù¸®¿ªÇÒÀ» ÇÏ´Â, ºñÁî´Ï½º ·ÎÁ÷À» ´ã´çÇÏ´Â 				  Controller
+	¡Ü ¿Ö »ç¿ëÇÒ±î? 
+	¤Ñ> Model, View, Controller ¼­·Î ¿µÇâÀ» ¹ÞÁö ¾Ê´Â 3°¡Áö·Î ºÐ¸®ÇÏ¿© 
+	      °¢ÀÚÀÇ ¿ªÇÒ¿¡ ÁýÁßÇÒ ¼ö ÀÖ°Ô²û °³¹ß°¡´É
+	      ¾ÖÇÃ¸®ÄÉÀÌ¼ÇÀÇ È®Àå¼º, À¯Áöº¸¼ö¼º, À¯¿¬¼ºÀÌ Áõ°¡ÇÏ°í Áßº¹ÄÚµùÀ» ÁÙÀÏ 		      ¼ö ÀÖ´Ù.
+	À¯¿¬¼º ¤Ñ> »õ·Î¿î ¿ä±¸»çÇ×¿¡ ´ëÇØ ÃÖ¼ÒÇÑÀÇ ºñ¿ëÀ¸·Î º¸´Ù À¯¿¬ÇÏ°Ô ´ëÃ³ÇÒ 			      ¼ö ÀÖ´Â °Í
+	     ´ÜÁ¡ - View°¡ ModelÀ» ÀÌ¿ëÇÏ±â¿¡, ¼­·Î°£ÀÇ ÀÇÁ¸¼ºÀ» ¿Ïº®È÷ ÇÇÇÒ ¼ö ¾ø			     ´Ù´Â ´ÜÁ¡ÀÌ ÀÖ´Ù
+		     ¤Ñ> ÁÁÀº MVC´Â ÀÇÁ¸¼ºÀ» ÃÖ´ëÇÑ ³·°Ô µðÀÚÀÎÇÑ ÆÐÅÏ
+	** NodeJS¿ë MVC ÇÁ·¹ÀÓ¿öÅ©·Î Express(¸ðµâ) °¡ ÀÖ´Ù.
+AngularJS
+	- 2013³â 9¿ù 1.0.8¹öÀüÀ¸·Î Á¤½Ä Ãâ½Ã
+	- AngularJS´Â HTMLÀ» È®Àå½ÃÄÑ µ¿ÀûÀÎ ApplicationÀ» Áö¿øÇÏ¸ç 
+	   µ¥ÀÌÅÍ°¡ º¯°æÇÔ¿¡ ÀÖ¾î ÀÚµ¿ÀûÀ¸·Î AngularJS¿¡¼­ UIÀÇ ¿ä¼Ò¸¦ ¸¸µé°í 
+	   µ¥ÀÌÅÍ ÇÊÅÍ¸µ/¼ÒÆÃ µî ¸¹Àº ±â´ÉÀ» Á¦°ø
+	- AngularJSÀÇ °¡Àå ÇÙ½É±â´ÉÀº ¾ç¹æÇâ µ¥ÀÌÅÍ¹ÙÀÎµù ±â´É
+	
+	ÀåÁ¡ 
+	- JavaScript³ª jQuery¿¡ ºñÇØ °³¹ßÀÚÀÇ ºÎ´ãÀÌ ÈÎ¾À ÁÙ¾îµç´Ù.
+	- ÇÁ·¹ÀÓ¿öÅ© ÄÚ¾î¿¡ DOMº¯È¯ ¿£ÁøÀ» ³Ö¾îµÒÀ¸·Î½á ÅÛÇÃ¸´À» HTMLÆÄÀÏ·Î ÀÛ	 	   ¼º°¡´É
+	   DOMº¯È¯ ¿£ÁøÀ» ÅëÇØ °³¹ßÀÚ´Â AngularJSÀÇ ´Ù¾çÇÑ µð·ºÆ¼ºê(Áö½ÃÀÚ)¸¦ ÀÌ	   	   ¿ëÇÏ¿© HTML¹®¹ýÀ» È®Àå°¡´É
+	¡Ü Scope / Model / View / Controller / Directives(Áö½ÃÀÚ)
+	** Scope ¤Ñ> ¸ðµ¨ º¯°æÀ» °¨ÁöÇÏ°í Ç¥ÇöÇÏ±â À§ÇÑ Ã¥ÀÓÀ» °®´Â´Ù. 
+			(scope¸¦ ÅëÇØ View¿Í Controller°£ÀÇ ¼ÒÅëÀÌ °¡´É)
+	** Model ¤Ñ> È­¸é ÅÛÇÃ¸´¿¡ ÇÕÃÄÁö´Â µ¥ÀÌÅÍ¸¦ °¡Áö°í ÀÖ´Â ÀÚ¹Ù½ºÅ©¸³Æ® °´Ã¼				(= µ¥ÀÌÅÍ)
+		    	Scope´Â Ç×»ó ¸ðµ¨À» ÂüÁ¶ÇÏ°í ÀÖ´Ù.
+	** View  ¤Ñ> Angular´Â ÅÛÇÃ¸´ÀÌ HTMLÀÌ¾î¼­ ¹Ù·Î DOMÀ¸·Î ÇØ¼®µÇ°í 
+			DOM¾È¿¡ directive°¡ ÅÛÇÃ¸´ ¿£Áø $compileÁö½Ã¾î¸¦ ÅëÇØ 				$watch¸¦ ¼³Á¤ÇÏ°í 
+			¸ðµ¨ÀÇ º¯°æÀ» °è¼Ó °¨½ÃÇÏ°Ô µÈ´Ù.
+		          View´Â ÅÛÇÃ¸´À¸·Î ScopeÀÇ Åõ¿µÃ¼ÀÌ°í, Scope´Â Model°ú 				View¸¦ ¿¬°áÇÏ¸ç Controller·Î ÀÌº¥Æ®¸¦ º¸³»´Â ¿ªÇÒÀ» ÇÑ´Ù.  
+	** Controller ¤Ñ> scope¿¡ model°ú functionÀ» Á¤ÀÇÇØÁÖ´Â ¿ªÇÒ 
+				¤Ñ> ±×·¯¸é View°¡ ±×°ÍµéÀ» »ç¿ë
+			   ÀÚ¹Ù½ºÅ©¸³Æ®ÀÌ¸ç ¾÷¹«Àû ÇàÀ§¸¦ Á¤ÀÇÇÑ´Ù. 
+			   ¶ÇÇÑ DOM ·»´õ¸µ Á¤º¸°¡ ÀÏÃ¼ ¾ø´Ù.
+	** Directives(Áö½Ã¾î) ¤Ñ> HTMLÀ» È®ÀåÇÏ¿© ÁÖ°í ÇàÀ§¸¦ ÀÏÀ¸Å°´Â ÁÖÃ¼ 
+				  Ex) µ¥ÀÌÅÍ ¹ÙÀÎµùÀ» À§ÇÑ Áß°ýÈ£ Ç¥±â {{}}
+				      ÄÁÆ®·Ñ·¯°¡ ºäÀÇ ¾î´À ºÎºÐÀ» °¨µ¶ÇÒÁö Á¤ÇÏ´Â 
+				      ng-controller,
+				      inputÀ» ÇØ´ç ¸ðµ¨ÀÇ ±¸¼º¹°¿¡ ¹ÙÀÎµùÇÏ´Â ng-model
+				      ÀÌµé ¸ðµÎ directive¸¦ ÀÌ¿ëÇÑ È®Àå ¹®¹ýÀÌ´Ù.
+
+ER Diagram
+Bootstrap
+RESTful API
+JSON
+Responsive Web
+Git
+	Repository(ÀúÀå¼Ò) ¤Ñ> ÆÄÀÏÀÌ³ª Æú´õ¸¦ ÀúÀåÇØ µÎ´Â °÷
+				    GitÀúÀå¼ÒÀÇ ÀåÁ¡Àº ÆÄÀÏÀÌ º¯°æÀÌ·Âº°·Î ±¸ºÐµÇ¾î Àú					    ÀåµÈ´Ù.
+	Ä¿¹Ô ¤Ñ> ÆÄÀÏ ¹× Æú´õÀÇ Ãß°¡ ¹× º¯°æ »çÇ×À» ÀúÀå¼Ò¿¡ ±â·ÏÇÏ±â À§ÇÔ
+	Ä¿¹Ô¸Þ¼¼ÁöÇü½Ä ¤Ñ> ¸í·áÇÏ°í ÀÌÇØÇÏ±â ½±°Ô ³²±â±â
+			1¹øÂ° ÁÙ : Ä¿¹Ô ³»ÀÇ º¯°æ ³»¿ëÀ» ¿ä¾à
+			2¹øÂ° ÁÙ : ºóÄ­
+			3¹øÂ° ÁÙ : º¯°æÇÑ ÀÌÀ¯
+	ºê·£Ä¡ ¤Ñ> ¿©·¯ °³¹ßÀÚµéÀÌ µ¿½Ã¿¡ ´Ù¾çÇÑ ÀÛ¾÷À» ÇÒ ¼ö ÀÖ°Ô ¸¸µé¾î ÁÖ´Â ±â´É
+		      µ¶¸³ÀûÀ¸·Î ¾î¶°ÇÑ ÀÛ¾÷À» ÁøÇàÇÏ±â À§ÇÑ °³³ä
+	ÅëÇÕ ºê·£Ä¡ ¤Ñ> ¾ðÁ¦µçÁö ¹èÆ÷ÇÒ ¼ö ÀÖ´Â ¹öÀüÀ» ¸¸µé ¼ö ÀÖ¾î¾ß ÇÏ´Â ºê·£Ä¡
+			    Ç×»ó ¾ÈÁ¤ÀûÀÎ »óÅÂ¸¦ À¯ÁöÇØ¾ß ÇÏ´Â ºê·£Ä¡
+			    (º¸Åë master·Î »ç¿ë)
+	ÅäÇÈ ºê·£Ä¡ ¤Ñ> ¹ö±× ¼öÁ¤ÀÌ³ª ±â´ÉÃß°¡ µîÀÇ ´ÜÀ§ÀÛ¾÷À» À§ÇÑ ºê·£Ä¡
+	HEAD ¤Ñ> ÇöÀç »ç¿ëÁßÀÎ ºê·£Ä¡ÀÇ ¼±µÎ ºÎºÐÀ» ³ªÅ¸³»´Â ÀÌ¸§
+		    'HEAD'¸¦ ÀÌµ¿ÇÏ¸é, »ç¿ëÇÏ´Â ºê·£Ä¡°¡ º¯°æµÈ´Ù.
+	stash ¤Ñ> ÆÄÀÏÀÇ º¯°æ ³»¿ëÀ» ÀÏ½ÃÀûÀ¸·Î ±â·ÏÇØµÎ´Â ¿µ¿ª
+		     ex) Ã¼Å©¾Æ¿ô ½Ã Ä¿¹ÔÇÏÁö ¾ÊÀº º¯°æ³»¿ë Áß ÀüÈ¯µÈ ºê·£Ä¡¿¡¼­ ÀÌ¹Ì 				 º¯°æµÈ ±â·ÏÀÌ ÀÖÀ» °æ¿ì Ãæµ¹ÀÌ ÀÏ¾î³¯ ¼ö ÀÖ´Âµ¥, ÀÌ °æ¿ì 				 stash·Î º¯°æ ³»¿ëÀ» ´Ù¸¥ °÷¿¡ ÀúÀå ¤Ñ> Ãæµ¹À» ÇÇÇÑ ÈÄ Ã¼Å©¾Æ				 ¿ôÀ» ÇÏ¸é µÈ´Ù.
+	¡Ü merge¿Í rebaseÀÇ Â÷ÀÌÁ¡
+		merge					rebase
+	º¯°æ³»¿ëÀÇ ÀÌ·ÂÀÌ ¸ðµÎ ³²¾ÆÀÖ±â / ÀÌ·ÂÀº ´Ü¼øÇØÁöÁö¸¸, ¿ø·¡ÀÇ Ä¿¹Ô ÀÌ·ÂÀÌ 							º¯°æµÊ.
+	¶§¹®¿¡ ÀÌ·ÂÀÌ º¹ÀâÇØÁü	       / Á¤È®ÇÑ ÀÌ·ÂÀ» ³²°Ü¾ß ÇÒ ÇÊ¿ä°¡ ÀÖÀ» °æ¿ì							¿¡´Â »ç¿ëÇÏ¸é ¾ÈµÊ.
+	* rebase : ÅäÇÈ ºê·£Ä¡¿¡ ÅëÇÕ ºê·£Ä¡ÀÇ ÃÖ½Å ÄÚµå¸¦ Àû¿ëÇÒ °æ¿ì¿¡ »ç¿ë
+	* merge : ÅëÇÕ ºê·£Ä¡¿¡ ÅäÇÈ ºê·£Ä¡¸¦ ºÒ·¯¿Ã °æ¿ì¿¡´Â ¿ì¼± rebase¸¦ ÇÑ ÈÄ 			    merge
+	¡Ü develop ºê·£Ä¡ ¤Ñ> ÅëÇÕ ºê·£Ä¡ÀÇ ¿ªÇÒÀ» ÇÏ¸ç, Æò¼Ò¿¡´Â ÀÌ ºê·£Ä¡¸¦ ±â¹Ý					   À¸·Î °³¹ßÁøÇà
+Bitbucket
