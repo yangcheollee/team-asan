@@ -1,11 +1,11 @@
 # Node.js 정리 - KCS 
 
-##1.Node.js 란?
+## 1.Node.js 란?
 
 ### 구글 크롬의 자바스크립트 엔진으로 만들어진 서버사이드 플랫폼. 
 ### NON_BLOKCING을 위해 콜백함수 사용 - > 비동기식 
 
-##Node.js 특징 
+## Node.js 특징 
 
 ### 1.비동기 I/O처리, 이벤트위주: 데이터가 반환할떄까지 기다리지않고 다음 API 실행. 
 ###                               이전 API값 결과반환시. Node.js가 이벤트알림 메커니즘 이용
@@ -14,49 +14,36 @@
 ### 4.노버퍼링 : 버퍼링이 없으며 데터를 CHUNK로 출력.
 
 
-#ORM 이란?
+# ORM 이란?
 ## OOP 언어와 RDBMS의 시스템을 매핑하여 데이터를 다루는 OOP를 쉽개해줌. 
 
-###1. 특정 DBMS에 종속되지 않는다.
-###2. SQL문이 코드에 들어가지 않는다.
-###3. 중첩 데이터를 바인딩해줌.
+### 1. 특정 DBMS에 종속되지 않는다.
+### 2. SQL문이 코드에 들어가지 않는다.
+### 3. 중첩 데이터를 바인딩해줌.
 
-##단점
+## 단점
 ### 퍼포먼스가 느림, 튜닝이어려움
 
 
-#Sequelize ?
+# Sequelize ?
 ## Node.js 의 ORM으로 Promise기반으로 동작. 
-
 ## Promise 란? 
 ### 비동기 작업방식을 약속하는것.  Pending , fulfilled ,rejectd 상태 존재.
 
-#MVC 패턴 
-
+# MVC 패턴 
 ## Model - View - Controller 역할을 나누어 개발하는 디자인 패턴.
 ### Model : 객체 데이터, DB쿼리를 통한 데이터
 ### View : 사용자에게 보여지는 화면 
 ### Controller : View 와 Model을 연결.
 
-#EXPRESS ? 
-
-	- nodeJS를 위한 빠르고 개방적이고 간결한 웹 프레임워크
-	- 일반적인 Web Application 기능을 포함하는, 
-	  WebApp을 개발하는데 필요한 수많은 모듈을 집합하여 사용자가 쓰기 쉽도록 만들어 둔 모듈
-	- 정규식을 지원하는 강력한 라우팅 메커니즘, 심플한 라우트 필터링
-	- 미들웨어 아키텍처를 활용하며 다양한 데이터 출력지원
-	- 다중으로 템플릿 엔진을 허용하는 간단한 변수전달 뷰 시스템
-	** 핵심 ㅡ> 라우터 자체에 미들웨어나 조건들을 끼워넣고 순서대로 순환해가며 처리해가는 것
-
-##Node.js 의 MVC 모듈이 Express 
-
+# EXPRESS ? 
+## Node.js 의 MVC 모듈이 Express 
 ### View = ejs 파일
 ### Controller = 라우터
-
 ### Package.json의 dependencies 에 "express" : "*" 추가해줌. pom.xml과 비슷 
 
 
-#REST API
+# REST API
 
 ## 무엇을(HTTP URI 리소스) 어떻게 한다(HTTP method + payload)
 ## HTTP 메소드와 CRUD 비교 
@@ -84,14 +71,22 @@
 ## 단점
 ### 표준이없음, RDBMS와 어색함(NoSQL과 잘맞음) , HTTP 한계에 묶임.
 
-#Response WEB : 반응형웹, 브라우저 크기에따라 다른 출력을 보여줌. 퍼블리셔의 역할
+# Response WEB : 반응형웹, 브라우저 크기에따라 다른 출력을 보여줌. 퍼블리셔의 역할
 
-#Bootstrap : 반응형웹을 쉽게 만들어주는 프레임워크 
+# Bootstrap : 반응형웹을 쉽게 만들어주는 프레임워크 
 
-#Angular js ?
-
+# Angular js ?
 ## WEB app을 만들수 있는 자바스크립트, mvc 프레임워크
 ## HTML과 자바스크립트의 DOM 핸들링을 자동적으로 수행해줌.
+## 양방향 데이터 바인딩:
+
+# Bitbucket(비트버킷)
+## github와 같이 원격저장소를 지원해줌. 
+## 차이점은 개인저장소를 5명까지 무료로 지원해준다는점.
+
+# ERD
+## 데이터들의 관계를 표현하기위한 모델링 방법.
+## 개념적모델링에 포함됨.
 
 ========================== ypLim ====================================
 Node JS
