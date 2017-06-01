@@ -512,6 +512,7 @@ http://api.domain.com/books/1/photo 	ㅡ> 1번 도서의 사진
 		PUT	 http://api.domain.com/books/1/		1번 도서정보 수정
 		DELETE	 http://api.domain.com/books/1/		1번 도서정보 삭제
 
+
 Idempotent(Yes/No)
 Post(Create) No , Put(Update) Yes, Get(Select) Yes, Delete(Delete) Yes
 Idempotent는 여러번 수행해도 결과가 같은 경우를 의미한다.
@@ -594,8 +595,7 @@ REST서버는 API를 제공하고, 제공된 API를 이용해서 비즈니스 �
 
 {
 	"age":29,
-	"name":"JIWOO",
-	"family":{"father":"박용덕","mother":"정선정"}
+	"name":"JIWOO"
 
 }
 
