@@ -120,7 +120,13 @@ Controller = 라우터
 비동기 작업방식을 약속하는 것 ㅡ> Pending, fulfilled, rejected 상태 존재
 
 
+# ● Sequalize
+- Node.js 기반의 ORM이다. 공식적으로 PostgreSQL, MySQL, MariaDB, SQLite, MS-SQL을 지원한다.
+- 모델을 정의하면 편리하게 createdAt, updatedAt 필드를 자동으로 만들어준다.
+- 보통 RDB에서 사용하는 데이터 타입은 모두 지원한다.
 
+## 장점
+Node의 타 ORM에 비해 GitHub 레포지스토리 스타 수도 가장 많고 활성화된 사용자 수가 가장 많다.
 
 # ● Maria DB
 - 오픈소스의 관계형 데이터베이스 관리시스템(RDBMS)
