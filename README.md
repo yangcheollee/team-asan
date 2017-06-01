@@ -403,8 +403,7 @@ JSON(JavaScript Object Notation)
 
 {
 	"age":29,
-	"name":"JIWOO",
-	"family":{"father":"박용덕","mother":"정선정"}
+	"name":"JIWOO"
 
 }
 
