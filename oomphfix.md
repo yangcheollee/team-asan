@@ -19,17 +19,16 @@
 * File – other 통해 Oomph 폴더에서 생성할 모델 선택
 * 개발환경을 설정해둔 프로젝트를 setup모델로 생성
 
-![Alt text](/C:/Users/User/Desktop/oomph1.png)
+![Alt text](/oomph1.png)
 
 생성된 모델은 기본적인 파일이 생성
 
 ---
 ###생성된 Setup 파일
-![Alt text](/C:/Users/User/Desktop/oomph2.png)
+![Alt text](oomph2.png)
 
-![Alt text](/C:/Users/User/Desktop/oomph3.png)
+![Alt text](oomph3.png)
 
-![로고](/C:/Users/User/Desktop/oomph1.png)
  
 * JRE 버전에 따른 위치를 지정 
 	*	oomph 사용자의 JRE 위치를 지정	
