@@ -19,17 +19,19 @@
 * File – other 통해 Oomph 폴더에서 생성할 모델 선택
 * 개발환경을 설정해둔 프로젝트를 setup모델로 생성
 
-![Alt text](/oomph1.png)
+ ![setup모델](http://postfiles16.naver.net/MjAxNzA3MDNfMjIg/MDAxNDk5MDY0Njk5NTE4.To3GnxKGxms8O2xx-woRg8q11SjNy3WuCnpca6UIMGYg.ZVw3F2mBL4apeXnDZFzSvOEjfk-GJfxxTOYPnTRPAPYg.PNG.ycy122/oomph1.png?type=w2)  
+
 
 생성된 모델은 기본적인 파일이 생성
 
 ---
 ###생성된 Setup 파일
-![Alt text](oomph2.png)
 
-![Alt text](oomph3.png)
+![create setup](http://postfiles2.naver.net/MjAxNzA3MDNfMTgg/MDAxNDk5MDY0Njk5Njk3.IC9gNLBSR_ceXFfgzl4WbiqE2DfkZ8tAeVO86BqFyYAg.Ue9szdA_PbeXygwjQO8TUteR46ioixXdpSgrBoiiDJsg.PNG.ycy122/oomph2.png?type=w2)
 
- 
+![Alt text](http://postfiles2.naver.net/MjAxNzA3MDNfNjUg/MDAxNDk5MDY0Njk5ODU2.sI69nsaikXsON0Qzybv85THrU9KEULjNhDim3NRhT9Ig.6wKAk7ebS0N0XHE796HqyMpY-nFb76sj6HCOhrxTvBcg.PNG.ycy122/oomph3.png?type=w2)
+
+
 * JRE 버전에 따른 위치를 지정 
 	*	oomph 사용자의 JRE 위치를 지정	
 * Eclipse Ini : 초기의 JVM의 힙메모리 크기를 지정
@@ -40,6 +42,7 @@ ith Table support) and GitHub Flavored Markdown.
 
 ---
 ###참조 페이지
+<br>
 <http://codeandme.blogspot.kr/p/oomph-articles.html>
 <br>
 
