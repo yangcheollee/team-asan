@@ -1,0 +1,25 @@
+/*
+window.fn = {};
+
+타이틀의 왼쪽편으로 메뉴가 호출되어지도록 한다.
+window.fn.toggleMenu = function () {
+  document.getElementById('appSplitter').left.toggle();
+};
+
+/*
+ * 왼쪽의 메뉴파와 하단의 메뉴 툴바를 클릭하면
+ * 현재페이지에서 바로 요청한 페이지 출력시켜준다.
+window.fn.loadView = function (index) {
+  document.getElementById('appTabbar').setActiveTab(index);
+  document.getElementById('sidemenu').close();
+};
+
+window.fn.pushPage = function (page, anim) {
+  if (anim) {
+    document.getElementById('appNavigator').pushPage(page.id, { data: { title: page.title }, animation: anim });
+  } else {
+    document.getElementById('appNavigator').pushPage(page.id, { data: { title: page.title } });
+  }
+};
+
+*/

@@ -1,0 +1,12 @@
+Nodejs를 이용하여 서버를 구동하여 웹을 호출시
+js파일과 css파일을 분리하여
+사용을 하는경우가 많은데 이럴 때는 
+서버를 구동하는 index.js에 
+app.use("/js",express.static(__dirname + "/js"));
+app.use("/css",express.static(__dirname + "/css"));
+추가를 하고 나서 해당 html에 파일을 import시켜주면서
+이용하면 된다.
+
+  <link rel="stylesheet" href="/css/sidemenu.css" type="text/css">
+  <script type="text/javascript" src="/js/pagefn.js"></script>
+  <script type="text/javascript" src="/js/config.js"></script>
