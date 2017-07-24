@@ -40,9 +40,12 @@
 
 ### TodoModule를 import하게되면
 	todos.component.html에 정의된 내용이 출력
+	
+![결과](https://raw.githubusercontent.com/yangcheollee/team-asan/455e0219533ef5cc029b72cc87bfcbbce00841a8/img/170724/Screenshot_8.png)
+	
 ![결과](https://raw.githubusercontent.com/yangcheollee/team-asan/455e0219533ef5cc029b72cc87bfcbbce00841a8/img/170724/Screenshot_7.png)
 
-![결과](https://raw.githubusercontent.com/yangcheollee/team-asan/455e0219533ef5cc029b72cc87bfcbbce00841a8/img/170724/Screenshot_8.png)
+
 ----
 ----
 ### 컴포넌트
