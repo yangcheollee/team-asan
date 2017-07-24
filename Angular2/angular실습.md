@@ -43,6 +43,8 @@
 ![결과](https://raw.githubusercontent.com/yangcheollee/team-asan/455e0219533ef5cc029b72cc87bfcbbce00841a8/img/170724/Screenshot_7.png)
 
 ![결과](https://raw.githubusercontent.com/yangcheollee/team-asan/455e0219533ef5cc029b72cc87bfcbbce00841a8/img/170724/Screenshot_8.png)
+
+### 사용하고 싶은 컴포넌트의 모듈을 app.module.ts에 import를 해주어야 사용할 컴포넌트에 정의된 selector의 내용을 호출해서 컴포넌트에 출력할 수 있다.
 ----
 ----
 ### 컴포넌트
