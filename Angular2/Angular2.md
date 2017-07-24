@@ -1,4 +1,4 @@
-##TypeScript
+## TypeScript
 
 	=> javascript + 타입
 
