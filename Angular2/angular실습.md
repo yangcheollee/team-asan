@@ -169,7 +169,8 @@ todos.component.ts에 newText속성생성
 
 ![결과](https://raw.githubusercontent.com/yangcheollee/team-asan/455e0219533ef5cc029b72cc87bfcbbce00841a8/img/170724/Screenshot_26.png)
 ### todo.module.ts에 FormModule추가해줘야한다.
-	ngModel은 Form모델에있다.
+	ngModel은 FormsModule에있다.
+	@NgModule을 사용하기 위해서는 FormsModule을 추가해주어야한다.
 	import { FormsModule } from '@angular/forms';
 
 
