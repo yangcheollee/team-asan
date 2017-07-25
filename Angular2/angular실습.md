@@ -211,3 +211,117 @@ todos.component.ts에 newText속성생성
 ![결과](https://raw.githubusercontent.com/yangcheollee/team-asan/455e0219533ef5cc029b72cc87bfcbbce00841a8/img/170724/Screenshot_28.png)
 
 ![결과](https://raw.githubusercontent.com/yangcheollee/team-asan/455e0219533ef5cc029b72cc87bfcbbce00841a8/img/170724/Screenshot_29.png)
+
+
+
+### 컴포넌트 커뮤니케이션
+
+	1. 부모컴포넌트  -> 자식컴포넌트
+	@Input()사용가능 , ES6 사용가능
+
+	2. 자식컴포넌트 -> 부모컴포넌트
+	@Output() 사용
+	EventEmitter를 사용 부모에게 이벤트 전달
+	부모컴포넌트는 $event로 이벤트의 데이터를 전달받음
+	자식이 부모 컴포넌트를 직접 주입받을 수 있다.
+
+
+### 자식컴포넌트 -> 부모컴포넌트 실습
+todos.component.ts 의 input을
+todo.component.ts template로 이동
+
+
+하나의 모델을 만들어서 다른 클래스에서 호출해서 사용가능
+사용할 모델생성
+
+	ng g class todo/share/todo.model
+
+todo.model.ts에 객체 생성
+export class Todo {
+
+done: boolean;
+
+text: string;
+
+}
+
+#### 생성한 Todo모델을 호출
+* todo.component.ts에  Todo호출
+
+
+* todos.component.ts에 Todo호출
+
+
+### <app-todo>를 셀렉터 호출
+* todos.component.html에서 <app-todo>호출
+* <app-todo>는 todo.component.ts에 지정한 셀렉터 
+* Todo객체를 <app-todo>에 전달해주어야한다.
+* 이 떄 사용하는 것이 @Input 이용
+
+
+#### todos.component.html에서 바인딩 할떄는
+*  <app-todo [todo]="todo"></app-todo>
+
+
+### add-todo 컴포넌트 생성
+* ng generate component todo/todos/add-todo –-inline-style –-inline-template 
+
+### todos.component.html의 할일추가와 버튼을 add-todo.component.ts에 생성
+
+### todos.component.ts의 addTodo메서드를 add-todo.component.ts에 이동
+
+* todos.component.ts
+
+
+* add-todo.component.ts
+* addTodo메서드 생성 
+* @Output을 이용한 onTodoAdded호출
+
+
+### 이벤트 객체 호출
+* todos.component.html에 
+
+* add-todo.component.ts addTodo호출
+
+
+import { Component, OnInit, Output, EventEmitter  } from '@angular/core';
+
+@Component({
+
+  selector: 'app-add-todo',
+
+  template: `
+
+   <button (click)="addTodo(newText)">+</button>
+
+   <input type="text" placeholder="할일추가" [(ngModel)]="newText">
+
+  {{newText}}
+  `,
+
+  styles: []
+
+})
+
+export class AddTodoComponent implements OnInit {
+
+  @Output() onTodoAdded = new EventEmitter();
+
+  newText: string;
+
+  constructor() { }
+
+  ngOnInit() {
+
+  }
+
+  addTodo(newText: string){
+
+   this.onTodoAdded.emit(newText);
+
+   this.newText = '';
+  }
+
+}
+
+
