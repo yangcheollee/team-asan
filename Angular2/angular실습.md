@@ -219,16 +219,24 @@ todos.component.ts에 newText속성생성
 	1. 부모컴포넌트  -> 자식컴포넌트
 	@Input()사용가능 , ES6 사용가능
 
+![결과](https://raw.githubusercontent.com/yangcheollee/team-asan/aa4f1fdeebb092b834f2ef163478d4dae599ed2d/img/170725/Screenshot_1.png)
+
 	2. 자식컴포넌트 -> 부모컴포넌트
 	@Output() 사용
 	EventEmitter를 사용 부모에게 이벤트 전달
 	부모컴포넌트는 $event로 이벤트의 데이터를 전달받음
 	자식이 부모 컴포넌트를 직접 주입받을 수 있다.
 
+![결과](https://raw.githubusercontent.com/yangcheollee/team-asan/aa4f1fdeebb092b834f2ef163478d4dae599ed2d/img/170725/Screenshot_2.png)
 
 ### 자식컴포넌트 -> 부모컴포넌트 실습
-todos.component.ts 의 input을
-todo.component.ts template로 이동
+* todos.component.ts 의 input을
+ ![결과](https://raw.githubusercontent.com/yangcheollee/team-asan/aa4f1fdeebb092b834f2ef163478d4dae599ed2d/img/170725/Screenshot_3.png)
+
+* todo.component.ts template로 이동
+
+ ![결과](https://raw.githubusercontent.com/yangcheollee/team-asan/aa4f1fdeebb092b834f2ef163478d4dae599ed2d/img/170725/Screenshot_5.png)
+
 
 
 하나의 모델을 만들어서 다른 클래스에서 호출해서 사용가능
@@ -245,44 +253,75 @@ text: string;
 
 }
 
+ ![결과](https://raw.githubusercontent.com/yangcheollee/team-asan/aa4f1fdeebb092b834f2ef163478d4dae599ed2d/img/170725/Screenshot_6.png)
+
+
+ ![결과](https://raw.githubusercontent.com/yangcheollee/team-asan/aa4f1fdeebb092b834f2ef163478d4dae599ed2d/img/170725/Screenshot_7.png)
+
 #### 생성한 Todo모델을 호출
 * todo.component.ts에  Todo호출
 
+ ![결과](https://raw.githubusercontent.com/yangcheollee/team-asan/aa4f1fdeebb092b834f2ef163478d4dae599ed2d/img/170725/Screenshot_8.png)
 
 * todos.component.ts에 Todo호출
+* 
+ ![결과](https://raw.githubusercontent.com/yangcheollee/team-asan/aa4f1fdeebb092b834f2ef163478d4dae599ed2d/img/170725/Screenshot_9.png)
 
 
 ### <app-todo>를 셀렉터 호출
 * todos.component.html에서 <app-todo>호출
+
+ ![결과](https://raw.githubusercontent.com/yangcheollee/team-asan/aa4f1fdeebb092b834f2ef163478d4dae599ed2d/img/170725/Screenshot_10.png)
+
+
 * <app-todo>는 todo.component.ts에 지정한 셀렉터 
 * Todo객체를 <app-todo>에 전달해주어야한다.
 * 이 떄 사용하는 것이 @Input 이용
 
 
+ ![결과](https://raw.githubusercontent.com/yangcheollee/team-asan/aa4f1fdeebb092b834f2ef163478d4dae599ed2d/img/170725/Screenshot_11.png)
+
+
 #### todos.component.html에서 바인딩 할떄는
 *  <app-todo [todo]="todo"></app-todo>
 
+ ![결과](https://raw.githubusercontent.com/yangcheollee/team-asan/aa4f1fdeebb092b834f2ef163478d4dae599ed2d/img/170725/Screenshot_12.png)
+
+---
+----
+
+
+## 자식컴포넌트 -> 부모컴포넌트 바인딩 @Output이용
 
 ### add-todo 컴포넌트 생성
 * ng generate component todo/todos/add-todo –-inline-style –-inline-template 
 
 ### todos.component.html의 할일추가와 버튼을 add-todo.component.ts에 생성
+* todos.component.html
+ ![결과](https://raw.githubusercontent.com/yangcheollee/team-asan/aa4f1fdeebb092b834f2ef163478d4dae599ed2d/img/170725/Screenshot_13.png)
+
+* add-todo.component.ts
+ ![결과](https://raw.githubusercontent.com/yangcheollee/team-asan/aa4f1fdeebb092b834f2ef163478d4dae599ed2d/img/170725/Screenshot_14.png)
+
 
 ### todos.component.ts의 addTodo메서드를 add-todo.component.ts에 이동
 
 * todos.component.ts
+ ![결과](https://raw.githubusercontent.com/yangcheollee/team-asan/aa4f1fdeebb092b834f2ef163478d4dae599ed2d/img/170725/Screenshot_16.png)
 
 
 * add-todo.component.ts
 * addTodo메서드 생성 
 * @Output을 이용한 onTodoAdded호출
 
+ ![결과](https://raw.githubusercontent.com/yangcheollee/team-asan/aa4f1fdeebb092b834f2ef163478d4dae599ed2d/img/170725/Screenshot_20.png)
 
 ### 이벤트 객체 호출
 * todos.component.html에 
+ ![결과](https://raw.githubusercontent.com/yangcheollee/team-asan/9aa6a8dce390795100fa8cc33f7a6c23b218afaf/img/170725/Screenshot_21.png)
 
-* add-todo.component.ts addTodo호출
 
+### add-todo.component.ts 설정파일
 
 import { Component, OnInit, Output, EventEmitter  } from '@angular/core';
 
